@@ -3,8 +3,12 @@ package com.example.listviewexample;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
+    ListView listView = findViewById(R.id.petList);
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +36,9 @@ public class MainActivity extends AppCompatActivity {
      * the content of a strings array resource
      */
     private void useStringResource() {
+        String[] content = getResources().getStringArray(R.array.breeds);
+        ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, content);
+        listView.setAdapter(adapter);
 
     }
 

@@ -8,5 +8,9 @@
         <item>Golden Retriever</item>
         <item>Alaskan Malamute</item>
         <item>Frenchie</item>
+        <item>German Shepherd</item>
+        <item>Beagle</item>
+        <item>Poodle</item>
+        <item>Bulldog</item>
     </string-array>
 </resources>
